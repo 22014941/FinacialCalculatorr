@@ -1,3 +1,34 @@
-Compiling a Java Program1. Verify that your computer has the Java Development Kit (JDK) installed. 2. Save your Java application (such as FinacialCalculatorr.java) with a `.java` extension. 3. Launch the command prompt or terminal. 4. Proceed to the directory containing your Java program. 5. Use the `javac` command to compile the program: {{{ javac  {{{ 1. A FinacialCalculatorr.java `.class` file (such as `FinacialCalculatorr.class}) will be generated if compilation is successful. *Using Java Software* 1. Verify that your computer has the Java Runtime Environment (JRE) installed. 2. Open the directory containing your compiled `.class` file.
+Input their monthly gross income and expenses.
+Select whether they want to rent or buy a property and calculate the related costs.
+Decide if they want to purchase a car with cash or through a loan, or if they prefer other transport options.
+Calculate remaining income after handling all expenses.
+Here’s an overview of the structure and features:
 
-Use the `java` command to launch the program: {{{ java FinacialCalculatorr  {{{ 1. The application will run, and the result will be displayed to you. * Making use of an IDE (Integrated Development Environment)* If you prefer to utilize an IDE, follow these steps: 1. Select an IDE (such as IntelliJ IDEA, Eclipse, or NetBeans). 2. Start a fresh Java undertaking. 3. In the project, copy and paste your Java code. 4. Use the built-in tools in the IDE to compile and run the program. *Common Instructions* - `javac [filename].java`: Compile a Java program. - `java [classname]`: Run a Java program. {java -version}: Verify the version of Java. *Fixing issues* - Verify that JDK/JRE is appropriately installed and configured. – Check that the `.java` file is stored in the appropriate folder. – Examine the code for syntactic mistakes.
+Features:
+Income and Expense Input:
+
+The user inputs their gross monthly income and various living costs (groceries, utilities, travel, etc.).
+Tax Calculation:
+
+Based on the user's income range, taxes are calculated and deducted from the gross income using predefined percentages for different income brackets.
+Accommodation:
+
+The user chooses whether to rent or buy a property.
+If renting, the monthly rental amount is input.
+If buying, the program calculates the monthly mortgage payment based on the property price, deposit, interest rate, and repayment period.
+Vehicle Purchase:
+
+The user decides whether to buy a car and selects a payment method (cash or contract).
+If purchasing via a contract, the loan repayment and insurance premiums are calculated.
+Remaining Income Calculation:
+
+The remaining income after expenses, accommodation costs, and transport or car-related costs are displayed.
+Key Methods:
+getValidDoubleInput(): Ensures valid numeric input for expenses, income, etc.
+getValidIntInput(): Ensures valid input for integers within a specific range.
+getValidChoice(): Ensures the user selects between two valid options (e.g., rent/buy or yes/no).
+getStringInput(): Handles simple string input, such as car model or brand names.
+Suggestions for Improvement:
+Error Handling: Improve the catch blocks by offering more specific feedback about invalid entries, e.g., catching InputMismatchException explicitly.
+Financial Calculations: Ensure that the monthly expense and savings after each section (accommodation, transport) are consistently computed based on the correct tax bracket used for final calculations.
+Would you like help with adding more features or testing specific aspects of this project?
